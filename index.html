@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngEs6">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular</title>
+</head>
+<body>
+
+  <div ng-controller="MainController as vm">
+    <h2>{{vm.list}}</h2>
+
+    <form ng-submit="vm.addToService(vm.item)">
+      <input type="number" ng-model="vm.item"/>
+      <button type="submit">Add</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
